@@ -1,2 +1,3 @@
 # redballoon
-See Storyboard for layout of links and topics. Testing commits.
+Storyboard for layout of links and topics. 
+Open index.html in firefox.
