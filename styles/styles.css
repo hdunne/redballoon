@@ -4,9 +4,9 @@ body
 	padding: 0px;
 	font-size: 12px;
 	font-family: Arial;
-	background-image: url("../images/purpleflower_big.jpg");
-	background-repeat: no-repeat;
-	background-size: 900px 675px;
+	background: linear-gradient(to right, #ecffce 67%, #ffffff 33%);
+	
+	
 
 }
 
@@ -16,10 +16,8 @@ body
 	height: 570px;
 	width: 890px;
 	padding: 0;
-	/*background-color: green;
-	opacity: 0.4;
-	filter: alpha(opacity=60); /* For IE8 and earlier */
-	z-index: -1;
+	z-index: 1;
+	
 }
 
 #main-info
@@ -28,6 +26,8 @@ body
 	left: 140px;
 	width: 600px;
 	font-size: 16px;
+	z-index:2;
+	
 }
 
 #welcome
@@ -37,6 +37,7 @@ body
 	left: 50px;
 	width: 400px;
 	font-size: 24px;
+	z-index:3;
 }
 
 #aside-info
@@ -63,29 +64,53 @@ body
 
 #navigation
 {
-	/*background: #ddd78e;*/
 	padding-left: 10px;
 	width: 100px;
 	float: left;
 	height: 450px;
 	font-size: 14px;
 	margin-left:15px;
+	position: absolute;
+	z-index: 5;
 }
+
+
 
 #sub-navigation
 {
-	background: #d926c7;	
+	background: #88c003;	
 	font-size: 14px;
+	position:absolute;
+    bottom:64px;
+    width: 600px;
+    padding: 4px;
+    text-align: center;
+    z-index: 4;
+}
+
+
+a:link {
+    color: white;
+    font-weight: bold; 
 }
 
 .aside-title-audio
 {
-	background: #ff66ff;
+	background: #88c003;
 	width: 250px;
 	font-size: 14px;
 	font-weight: bold;
 	color: white;
 	padding: 5px;
+}
+
+a:hover {
+    background-color: yellow;
+} 
+
+a.current {
+  background:red;
+  color:white;
 }
 
 #content-frame
@@ -106,5 +131,5 @@ body
 
 #audio
 {
-	background-color: #ff66ff;
+	background-color: #88c003;
 }
