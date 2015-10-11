@@ -79,7 +79,7 @@ function finishCourse()
 	oScorm.quit();
 }
 
-
+// This function is supposed to highlight the current page in navigation
 $(function(){
 	  $('a').each(function() {
 	    if ($(this).prop('href') == window.location.href) {
@@ -88,3 +88,167 @@ $(function(){
 	  });
 	});
 
+function visitTopic1()
+{
+	sessionStorage.setItem( "topic1", "visited" );
+	checkVisits();
+	}
+
+function visitTopic2()
+{
+	sessionStorage.setItem( "topic2", "visited" );
+	checkVisits();
+	}
+
+function visitTopic2a()
+{
+	sessionStorage.setItem( "topic2a", "visited" );
+	checkVisits();
+	}
+
+function visitTopic2b()
+{
+	sessionStorage.setItem( "topic2b", "visited" );
+	checkVisits();
+	}
+
+function visitTopic3()
+{
+	sessionStorage.setItem( "topic3", "visited" );
+	checkVisits();
+	}
+
+function visitTopic3a()
+{
+	sessionStorage.setItem( "topic3a", "visited" );
+	checkVisits();
+	}
+
+function visitTopic3b()
+{
+	sessionStorage.setItem( "topic3b", "visited" );
+	checkVisits();
+	}
+
+function visitTopic3c()
+{
+	sessionStorage.setItem( "topic3c", "visited" );
+	checkVisits();
+	}
+
+function visitTopic3d()
+{
+	sessionStorage.setItem( "topic3d", "visited" );
+	checkVisits();
+	}
+
+function visitTopic3e()
+{
+	sessionStorage.setItem( "topic3e", "visited" );
+	checkVisits();
+	}
+
+function visitTopic4()
+{
+	sessionStorage.setItem( "topic4", "visited" );
+	checkVisits();
+	}
+
+function visitTopic4a()
+{
+	sessionStorage.setItem( "topic4a", "visited" );
+	checkVisits();
+	}
+
+function visitTopic4b()
+{
+	sessionStorage.setItem( "topic4b", "visited" );
+	checkVisits();
+	}
+
+function visitTopic4c()
+{
+	sessionStorage.setItem( "topic4c", "visited" );
+	checkVisits();
+	}
+
+function visitTopic4d()
+{
+	sessionStorage.setItem( "topic4d", "visited" );
+	checkVisits();
+	}
+
+function visitTopic5()
+{
+	sessionStorage.setItem( "topic5", "visited" );
+	checkVisits();
+	}
+
+function visitTopic5a()
+{
+	sessionStorage.setItem( "topic5a", "visited" );
+	checkVisits();
+	}
+
+function visitTopic5b()
+{
+	sessionStorage.setItem( "topic5b", "visited" );
+	checkVisits();
+	}
+
+function visitTopic5c()
+{
+	sessionStorage.setItem( "topic5c", "visited" );
+	checkVisits();
+	}
+
+function visitTopic6()
+{
+	sessionStorage.setItem( "topic6", "visited" );
+	checkVisits();
+	}
+
+function visitTopic7()
+{
+	sessionStorage.setItem( "topic7", "visited" );
+	checkVisits();
+	}
+
+function checkVisits()
+{
+	var value1 = sessionStorage.getItem( "topic1" ); 
+	var value2 = sessionStorage.getItem( "topic2" ); 
+	var value2a = sessionStorage.getItem( "topic2a" );
+	var value2b = sessionStorage.getItem( "topic2b" );
+	var value3 = sessionStorage.getItem( "topic3" ); 
+	var value3a = sessionStorage.getItem( "topic3a" );
+	var value3b = sessionStorage.getItem( "topic3b" );
+	var value3c = sessionStorage.getItem( "topic3c" );
+	var value3d = sessionStorage.getItem( "topic3d" );
+	var value3e = sessionStorage.getItem( "topic3e" );
+	var value4 = sessionStorage.getItem( "topic4" ); 
+	var value4a = sessionStorage.getItem( "topic4a" );
+	var value4b = sessionStorage.getItem( "topic4b" );
+	var value4c = sessionStorage.getItem( "topic4c" );
+	var value4d = sessionStorage.getItem( "topic4d" );
+	var value5 = sessionStorage.getItem( "topic5" );
+	var value5a = sessionStorage.getItem( "topic5a" );
+	var value5b = sessionStorage.getItem( "topic5b" );
+	var value5c = sessionStorage.getItem( "topic5c" );
+	var value6 = sessionStorage.getItem( "topic6" );
+	var value7 = sessionStorage.getItem( "topic7" );
+	
+	if( value1 == "visited" && value2 == "visited" 
+		&& value2a == "visited" && value2b == "visited"
+		&& value3 == "visited" && value3a == "visited"
+		&& value3b == "visited" && value3c == "visited"
+		&& value3d == "visited" && value3e == "visited"
+		&& value4 == "visited" && value4a == "visited"
+		&& value4b == "visited" && value4c == "visited"
+		&& value4d == "visited"	&& value5 == "visited" 
+		&& value5a == "visited"	&& value5b == "visited" && value5c == "visited"
+		&& value6 == "visited" && value7 == "visited" )
+	{
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline"; 
+	}
+}

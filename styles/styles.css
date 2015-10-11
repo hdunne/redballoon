@@ -74,7 +74,10 @@ body
 	z-index: 5;
 }
 
-
+#quiz-link
+{
+	display:none
+}
 
 #sub-navigation
 {
