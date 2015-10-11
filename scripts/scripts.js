@@ -80,8 +80,8 @@ function finishCourse()
 }
 
 // This function is supposed to highlight the current page in navigation
-$(function(){
-	  $('a').each(function() {
+function Current(){
+	  ('a').each(function() {
 	    if ($(this).prop('href') == window.location.href) {
 	      $(this).addClass('current');
 	    }
