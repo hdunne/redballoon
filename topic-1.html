@@ -1,52 +1,64 @@
-<!doctype html>
+<!doctype HTML>
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>Page title here</title>
+		<title>Buzzworthy</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		
+		<script language="javascript" src="scripts/navigation.js"></script>
+		<style>
+		body {
+		background-image: url("images/purpleflower_big.jpg");
+		background-repeat: no-repeat;
+		}
+		#welcome {
+		background-color: transparent;
+		}
+		#sub-navigation {
+		background-color: #dfd994;
+		}
+		</style>
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body onload="javascript:parent.visitTopic1()"; "javascript:parent.Current()">
+	<body onload="javascript:parent.visitTopic1()" >
 	<div id="banner">
 		<header>
-			<img src="images/buzzbanner.png">
+			<img src="images/banner-intro.png">
 		</header>
 	</div>
 			
 	<div id="navigation">
 		<nav>
-		<img src="images/hc-nav.png" title="Navigation links" alt="Navigation Links" /> <br/> <br/>
-			<a href = "./topic-1.html">Intro</a> <br/> <br/>
-			<a href = "./topic-2.html">Why Bees?</a> <br/> <br/>
-			<a href = "./topic-3.html">Bee Life</a> <br/> <br/>
-			<a href = "topic-4.html">Hive Building</a> <br/> <br/>
-			<a href = "./topic-5.html">Products</a> <br/> <br/>
-			<a href = "./topic-6.html">Additional</a> <br/> <br/>
-			<a href = "./topic-7.html">References</a> <br/> <br/>
-			<a href = "./topic-8.html" id="quiz-link" >Quiz</a> <br/> <br/>
+			<p id="p01"><a class="navlinks" href="topic-1.html" id="p01a" onclick="javascript:showOne();">Introduction</a></p>
+			<p id="p02"><a class="navlinks" href="topic-2.html" id="p02a" onclick="javascript:showTwo();">Why Bees?</a></p>
+			<p id="p03"><a class="navlinks" href="topic-3.html" id="p03a" onclick="javascript:showThree();">Bee Life</a></p>
+			<p id="p04"><a class="navlinks" href="topic-4.html" id="p04a" onclick="javascript:showFour();">Hive Building</a></p>
+			<p id="p05"><a class="navlinks" href="topic-5.html" id="p05a" onclick="javascript:showFive();">Products</a></p>
+			<p id="p06"><a class="navlinks" href="topic-6.html" id="p06a" onclick="javascript:showSix();">Addt'l Resources</a></p>
+			<p id="p07"><a class="navlinks" href="topic-7.html" id="p07a" onclick="javascript:showSeven();">References</a></p>
+			<p id="quiz-link"><a class="navlinks" href="topic-8.html" id="quiz-link">Quiz</a></p>
 		</nav>
 	</div>
 		<div id="main-content">
 		<section>
 			<div id="main-info">
+				<div id="b-animation">
+					<img src="images/bee.png" title="bee" alt="bee" />
+				</div>
 				<article>
-					
 					<div id="welcome">
-					<header>
-						<h1>Welcome</h1>
-					</header>
-						<p>
-						Welcome to this lesson module on Apis mellifera, 
-						the scientific name for the European honeybee that is found
-						in North America.  Please read the lessons, and view the 
-						videos to learn more about this amazing insect!
-						</p>
-					</div>
-			
-					
+						<header>
+							<h1>Welcome</h1>
+						</header>
+							<p>
+								Welcome to this lesson module on Apis mellifera, 
+								the scientific name for the European honeybee that is found
+								in North America.  Please read the lessons, and view the 
+								videos to learn more about this amazing insect!
+							</p>
+						</div>
 				</article>
 			</div>
+			<div id="sub-navigation">Images go here</div>
 			<div id="aside-info">
 				<aside>
 				<section>
@@ -66,7 +78,7 @@
 				<section>
 						<header>
 						<p class="aside-title-audio">Audio</p>
-					</header>
+					</header><p id="audio">Audio Player Goes Here</p>
 					<!--- put your audio here --->
 				</section>
 				</aside>

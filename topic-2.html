@@ -4,27 +4,27 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/navigation.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body onload="javascript:parent.visitTopic2()">
+	<body onload="javascript:parent.visitTopic2();">
+	<div id="grad"></div>
 	<div id="banner">
 		<header>
-			<img src="images/buzzbanner.png">
+			<img src="images/banner-why.png">
 		</header>
 	</div>
-			
 	<div id="navigation">
 		<nav>
-		<img src="images/hc-nav.png" title="Navigation links" alt="Navigation Links" /> <br/> <br/>
-			<a href = "./topic-1.html">Intro</a> <br/> <br/>
-			<a href = "./topic-2.html">Why Bees?</a> <br/> <br/>
-			<a href = "./topic-3.html">Bee Life</a> <br/> <br/>
-			<a href = "topic-4.html">Hive Building</a> <br/> <br/>
-			<a href = "./topic-5.html">Products</a> <br/> <br/>
-			<a href = "./topic-6.html">Additional</a> <br/> <br/>
-			<a href = "./topic-7.html">References</a> <br/> <br/>
-			<a href = "./topic-8.html" id="quiz-link" >Quiz</a> <br/> <br/>
+			<p id="p01"><a class="navlinks" href="topic-1.html" id="p01a" onclick="javascript:showOne();">Introduction</a></p>
+			<p id="p02"><a class="navlinks" href="topic-2.html" id="p02a" onclick="javascript:showTwo();">Why Bees?</a></p>
+			<p id="p03"><a class="navlinks" href="topic-3.html" id="p03a" onclick="javascript:showThree();">Bee Life</a></p>
+			<p id="p04"><a class="navlinks" href="topic-4.html" id="p04a" onclick="javascript:showFour();">Hive Building</a></p>
+			<p id="p05"><a class="navlinks" href="topic-5.html" id="p05a" onclick="javascript:showFive();">Products</a></p>
+			<p id="p06"><a class="navlinks" href="topic-6.html" id="p06a" onclick="javascript:showSix();">Addt'l Resources</a></p>
+			<p id="p07"><a class="navlinks" href="topic-7.html" id="p07a" onclick="javascript:showSeven();">References</a></p>
+			<p id="quiz-link"><a class="navlinks" href="topic-8.html" id="quiz-link">Quiz</a></p>
 		</nav>
 	</div>
 		<div id="main-content">
@@ -47,10 +47,9 @@
 				</article>
 			</div>
 			<div id="sub-navigation">
-				<semantic>
+				Images go here with links
 					<a href = "./topic-2a.html"> Help Save the Planet</a> &nbsp &nbsp
 					<a href = "./topic-2b.html"> Knowledge Assessment</a>
-				</semantic>
 			</div>
 			<div id="aside-info">
 				<aside>

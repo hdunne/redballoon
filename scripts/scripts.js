@@ -23,7 +23,19 @@ function startCourse()
             sessionStorage.clear();
             // set the "key" by giving it a value.  all values are strings!
             // course_started indicated that this OLM has started
-    		sessionStorage.setItem( "course_started", "1" );
+    		
+    		sessionStorage.setItem( "course_started", "1" );	
+    		sessionStorage.setItem( "topic1", "unvisited" );
+    		sessionStorage.setItem( "topic2", "unvisited" );
+    		sessionStorage.setItem( "topic2a", "unvisited" );
+    		sessionStorage.setItem( "topic2b", "unvisited" );
+    		sessionStorage.setItem( "topic3", "unvisited" );
+    		sessionStorage.setItem( "topic3a", "unvisited" );
+    		sessionStorage.setItem( "topic3b", "unvisited" );
+    		sessionStorage.setItem( "topic3c", "unvisited" );
+    		sessionStorage.setItem( "topic3d", "unvisited" );
+    		sessionStorage.setItem( "topic3e", "unvisited" );
+    		sessionStorage.setItem( "topic4", "unvisited" );
     			
 			// set the values you want to persist throughout the website here
         }
@@ -77,141 +89,142 @@ function finishCourse()
 {
 	oScorm.save();
 	oScorm.quit();
+	alert("goodbye")
 }
 
 // This function is supposed to highlight the current page in navigation
-function Current(){
+/*function Current(){
 	  ('a').each(function() {
 	    if ($(this).prop('href') == window.location.href) {
 	      $(this).addClass('current');
 	    }
 	  });
 	});
-
+*/
 function visitTopic1()
 {
 	sessionStorage.setItem( "topic1", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic2()
 {
 	sessionStorage.setItem( "topic2", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic2a()
 {
 	sessionStorage.setItem( "topic2a", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic2b()
 {
 	sessionStorage.setItem( "topic2b", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic3()
 {
 	sessionStorage.setItem( "topic3", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic3a()
 {
 	sessionStorage.setItem( "topic3a", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic3b()
 {
 	sessionStorage.setItem( "topic3b", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic3c()
 {
 	sessionStorage.setItem( "topic3c", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic3d()
 {
 	sessionStorage.setItem( "topic3d", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic3e()
 {
 	sessionStorage.setItem( "topic3e", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic4()
 {
 	sessionStorage.setItem( "topic4", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic4a()
 {
 	sessionStorage.setItem( "topic4a", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic4b()
 {
 	sessionStorage.setItem( "topic4b", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic4c()
 {
 	sessionStorage.setItem( "topic4c", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic4d()
 {
 	sessionStorage.setItem( "topic4d", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic5()
 {
 	sessionStorage.setItem( "topic5", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic5a()
 {
 	sessionStorage.setItem( "topic5a", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic5b()
 {
 	sessionStorage.setItem( "topic5b", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic5c()
 {
 	sessionStorage.setItem( "topic5c", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic6()
 {
 	sessionStorage.setItem( "topic6", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function visitTopic7()
 {
 	sessionStorage.setItem( "topic7", "visited" );
-	checkVisits();
+	checkVisits()
 	}
 
 function checkVisits()
@@ -252,3 +265,4 @@ function checkVisits()
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline"; 
 	}
 }
+

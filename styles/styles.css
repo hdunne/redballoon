@@ -2,40 +2,85 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: Arial;
-	background: linear-gradient(to right, #ecffce 67%, #ffffff 33%);
-	
-	
+	color: #522900;
+}
 
+#b-animation
+{
+	width: 100px;
+    height: 100px;
+    position: relative;
+    left: 40px;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+    animation-name: example;
+    animation-timing-function:ease-in-out;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    z-index: 10;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {transform: rotate(90deg); left:400px; top:0px;}
+    50%  {transform: rotate(30deg); left:400px; top:200px;}
+    75%  {transform: rotate(270deg); left:0px; top:200px;}
+    100% {transform: rotate(90deg); left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {transform: rotate(90deg); left:400px; top:0px;}
+    50%  {transform: rotate(30deg); left:400px; top:200px;}
+    75%  {transform: rotate(270deg); left:0px; top:200px;}
+    100% {transform: rotate(90deg); left:0px; top:0px;}
+}
+
+#grad
+{
+	position: fixed;
+    height: 675px;
+    width: 900px;
+    background: -webkit-linear-gradient(#fdf6c1, #fdf6c1, #fbe864, #5c8533); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fdf6c1, #fdf6c1, #fbe864, #5c8533); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fdf6c1, #fdf6c1,#fbe864, #5c8533); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fdf6c1, #fdf6c1, #fbe864, #5c8533); /* Standard syntax (must be last) */
+    z-index: -1;
 }
 
 #main-content
 {
 	position: relative;
-	height: 570px;
+	height: 550px;
 	width: 890px;
 	padding: 0;
 	z-index: 1;
-	
 }
 
 #main-info
 {
-	position: absolute;
+	position: absolute;	
 	left: 140px;
 	width: 600px;
-	font-size: 16px;
 	z-index:2;
-	
 }
 
 #welcome
 {
 	position: absolute;
+	background-color: #fdf6c1;
+	border: 1px solid black;
 	top: 80px;
 	left: 50px;
 	width: 400px;
+	padding: 10px;
 	font-size: 24px;
 	z-index:3;
 }
@@ -43,9 +88,35 @@ body
 #aside-info
 {
 	position: absolute;
-	right: 0px;
-	width: 250px;
+	right: 8px;
+	width: 242px;
 	vertical-align: top;
+}
+
+.aside-title-audio
+{
+	/*background: #88c003;*/
+	background-color: #5c8533;
+	width: 242px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+}
+
+#transcript
+{
+	color: black;
+	padding: 5px;
+	font-size: 14px;
+	overflow: auto;
+	height: 250px;
+	width: 240px;
+}
+
+#audio
+{
+	padding: 5px;
 }
 
 #footer
@@ -64,47 +135,53 @@ body
 
 #navigation
 {
-	padding-left: 10px;
-	width: 100px;
+	position: relative;
+	width: 130px;
 	float: left;
-	height: 450px;
-	font-size: 14px;
+	padding: 0px;
 	margin-left:15px;
-	position: absolute;
-	z-index: 5;
+	z-index: 100;
 }
 
-#quiz-link
+nav > p
+{
+	padding: 8px;
+	border: 1px solid #fbe864;
+	/*background-color: #663300;*/
+	background-color: #5c8533;
+	box-shadow: 0px 0px 5px #ffffff;
+}
+
+.navlinks
+{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+/*#quiz-link
 {
 	display:none
-}
+}*/
 
 #sub-navigation
 {
-	background: #88c003;	
-	font-size: 14px;
+	background-color: transparent;	
 	position:absolute;
-    bottom:64px;
-    width: 600px;
+    bottom:20px;
+    height: 80px;
+    width: 890px;
     padding: 4px;
     text-align: center;
+    box-shadow: 0px 0px 5px #666666;
     z-index: 4;
 }
 
-
+/*
 a:link {
     color: white;
     font-weight: bold; 
-}
-
-.aside-title-audio
-{
-	background: #88c003;
-	width: 250px;
-	font-size: 14px;
-	font-weight: bold;
-	color: white;
-	padding: 5px;
 }
 
 a:hover {
@@ -115,24 +192,9 @@ a.current {
   background:red;
   color:white;
 }
+*/
 
 #content-frame
 {
-	border: none;
-		
-}
-	
-#transcript
-{
-	color: black;
-	padding: 5px;
-	font-size: 14px;
-	overflow: auto;
-	height: 400px;
-	width: 250px;
-}
-
-#audio
-{
-	background-color: #88c003;
+	border: none;	
 }
