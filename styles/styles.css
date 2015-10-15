@@ -43,7 +43,7 @@ body
     100% {transform: rotate(90deg); left:0px; top:0px;}
 }
 
-#grad
+/*#grad
 {
 	position: fixed;
     height: 675px;
@@ -53,7 +53,7 @@ body
     background: -moz-linear-gradient(#fdf6c1, #fdf6c1,#fbe864, #5c8533); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#fdf6c1, #fdf6c1, #fbe864, #5c8533); /* Standard syntax (must be last) */
     z-index: -1;
-}
+}*/
 
 #main-content
 {
