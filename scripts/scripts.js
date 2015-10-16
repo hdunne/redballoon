@@ -112,6 +112,7 @@ function finishCourse()
 	  });
 	});
 */
+
 function visitTopic1()
 {
 	sessionStorage.setItem( "topic1", "visited" );
