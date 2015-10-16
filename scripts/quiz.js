@@ -22,7 +22,7 @@ function processQuiz3e()
 		}
 	var q4 = document.forms.quiz1.question3;
 	
-	if( q4[ 2 ].checked )
+	if( q4[ 3 ].checked )
 		{
 			score = score + 1;
 		}
@@ -60,25 +60,25 @@ function processQuizfinal()
 		}
 	var q5 = document.forms.quiz2.question3;
 	
-	if( q5[ 2 ].checked )
+	if( q5[ 3 ].checked )
 		{
 			score = score + 1;
 		}
 	var q6 = document.forms.quiz2.question3;
 	
-	if( q6[ 2 ].checked )
+	if( q6[ 4 ].checked )
 		{
 			score = score + 1;
 		}
 	var q7 = document.forms.quiz2.question3;
 	
-	if( q7[ 2 ].checked )
+	if( q7[ 5 ].checked )
 		{
 			score = score + 1;
 		}
 	var q8 = document.forms.quiz2.question3;
 	
-	if( q8[ 2 ].checked )
+	if( q8[ 6 ].checked )
 		{
 			score = score + 1;
 		}
