@@ -22,7 +22,7 @@ function showOne()
 function showTwo()
 {
 	document.getElementById("p01").style.backgroundColor = "#663300";
-	document.getElementById("p01a").style.color = "yellow";
+	document.getElementById("p01a").style.color = "white";
 	document.getElementById("p02").style.backgroundColor = "#dfd994";
 	document.getElementById("p02a").style.color = "black";
 	document.getElementById("p03").style.backgroundColor = "#663300";
