@@ -20,12 +20,6 @@ function processQuiz3e()
 		{
 			score = score + 1;
 		}
-	var q4 = document.forms.quiz1.question3;
-	
-	if( q4[ 3 ].checked )
-		{
-			score = score + 1;
-		}
 	
 	alert( "You got " + score + " correct!");
 }
