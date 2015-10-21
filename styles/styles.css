@@ -189,6 +189,12 @@ nav > p
 	display:none
 }
 
+.check
+{
+	color:red;
+	display: none;
+}
+
 #sub-navigation
 {
 	background-color: #dfd994;	
