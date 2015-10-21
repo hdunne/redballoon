@@ -64,7 +64,7 @@ body
 	z-index: 1;
 }
 
-#main-info
+#objective
 {
 	position: absolute;	
 	left: 140px;
@@ -72,14 +72,14 @@ body
 	z-index:2;
 }
 
-#welcome
+#main-info
 {
 	position: absolute;
-	background-color: #fdf6c1;
 	border: 1px solid black;
 	top: 80px;
 	left: 30px;
 	width: 420px;
+	height: 322px;
 	padding: 10px;
 	font-size: 24px;
 	z-index:3;
