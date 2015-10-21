@@ -120,6 +120,18 @@ body
 	margin: 0;
 }
 
+.subnav
+{
+    float: left;
+    width: 10em;
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    padding: 0.2em 2em;
+}
+
+.subnav > a:hover {background-color: #ff3300;}
+
 .ref
 {
 	font-size: 14px;
