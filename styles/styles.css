@@ -94,8 +94,14 @@ body
 	height: 322px;
 	padding: 10px;
 	font-size: 20px;
+	vertical-align:10px;
 	overflow: auto;
 	z-index:3;
+}
+
+.right
+{
+    float: right;
 }
 
 .ref
