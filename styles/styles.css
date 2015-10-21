@@ -75,9 +75,13 @@ body
 #objective
 {
 	position: absolute;	
-	left: 140px;
-	width: 600px;
-	z-index:2;
+	top: 0px;
+	left: 170px;
+	width: 420px;
+	height: 50px;
+	padding: 10px;
+	font-size: 14px;
+	z-index:3;
 }
 
 #main-info
@@ -85,20 +89,26 @@ body
 	position: absolute;
 	border: 1px solid black;
 	top: 80px;
-	left: 30px;
+	left: 170px;
 	width: 420px;
 	height: 322px;
 	padding: 10px;
-	font-size: 24px;
+	font-size: 20px;
+	overflow: auto;
 	z-index:3;
+}
+
+.ref
+{
+	font-size: 14px;
 }
 
 #aside-info
 {
 	position: absolute;
+	top: 0px;
 	left: 630px;
 	width: 242px;
-	vertical-align: top;
 }
 
 .aside-title-audio
