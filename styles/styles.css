@@ -168,10 +168,15 @@ nav > p
 }
 
 
-/*#quiz-link
+#quiz-link-box
 {
 	display:none
-}*/
+}
+
+#quiz-link
+{
+	display:none
+}
 
 #sub-navigation
 {
