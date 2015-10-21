@@ -7,6 +7,14 @@ body
 	color: #522900;
 }
 
+/*
+#intro
+{
+	background-image: url("../purpleflower_big.jpg");
+	background-repeat: no-repeat;
+}
+*/
+
 #b-animation
 {
 	width: 100px;
@@ -88,7 +96,7 @@ body
 #aside-info
 {
 	position: absolute;
-	left: 640px;
+	left: 630px;
 	width: 242px;
 	vertical-align: top;
 }
@@ -107,11 +115,11 @@ body
 #transcript
 {
 	color: black;
-	padding: 5px;
+	padding: 10px;
 	font-size: 14px;
 	overflow: auto;
 	height: 250px;
-	width: 240px;
+	width: 230px;
 }
 
 #audio
@@ -156,7 +164,7 @@ nav > p
 {
 	color: white;
 	font-weight: bold;
-	text-decoration: none;
+	/*text-decoration: none;*/
 }
 
 
@@ -167,7 +175,7 @@ nav > p
 
 #sub-navigation
 {
-	background-color: transparent;	
+	background-color: #dfd994;	
 	position:absolute;
     bottom:20px;
     height: 80px;

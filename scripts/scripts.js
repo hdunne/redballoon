@@ -113,130 +113,286 @@ function finishCourse()
 	});
 */
 
+var index = 0;
+
+function showOne()
+{
+	document.getElementById("p01").style.backgroundColor = "#dfd994";
+	document.getElementById("p01a").style.color = "black";
+	document.getElementById("p02").style.backgroundColor = "#663300";
+	document.getElementById("p02a").style.color = "white";
+	document.getElementById("p03").style.backgroundColor = "#663300";
+	document.getElementById("p03a").style.color = "white";
+	document.getElementById("p04").style.backgroundColor = "#663300";
+	document.getElementById("p04a").style.color = "white";
+	document.getElementById("p05").style.backgroundColor = "#663300";
+	document.getElementById("p05a").style.color = "white";
+	document.getElementById("p06").style.backgroundColor = "#663300";
+	document.getElementById("p06a").style.color = "white";
+	document.getElementById("p07").style.backgroundColor = "#663300";
+	document.getElementById("p07a").style.color = "white";
+	index = 0;
+}
+
+function showTwo()
+{
+	document.getElementById("p01").style.backgroundColor = "#663300";
+	document.getElementById("p01a").style.color = "white";
+	document.getElementById("p02").style.backgroundColor = "#dfd994";
+	document.getElementById("p02a").style.color = "black";
+	document.getElementById("p03").style.backgroundColor = "#663300";
+	document.getElementById("p03a").style.color = "white";
+	document.getElementById("p04").style.backgroundColor = "#663300";
+	document.getElementById("p04a").style.color = "white";
+	document.getElementById("p05").style.backgroundColor = "#663300";
+	document.getElementById("p05a").style.color = "white";
+	document.getElementById("p06").style.backgroundColor = "#663300";
+	document.getElementById("p06a").style.color = "white";
+	document.getElementById("p07").style.backgroundColor = "#663300";
+	document.getElementById("p07a").style.color = "white";
+	index = 1;
+}
+
+function showThree()
+{
+	document.getElementById("p01").style.backgroundColor = "#663300";
+	document.getElementById("p01a").style.color = "white";
+	document.getElementById("p02").style.backgroundColor = "#663300";
+	document.getElementById("p02a").style.color = "white";
+	document.getElementById("p03").style.backgroundColor = "#dfd994";
+	document.getElementById("p03a").style.color = "black";
+	document.getElementById("p04").style.backgroundColor = "#663300";
+	document.getElementById("p04a").style.color = "white";
+	document.getElementById("p05").style.backgroundColor = "#663300";
+	document.getElementById("p05a").style.color = "white";
+	document.getElementById("p06").style.backgroundColor = "#663300";
+	document.getElementById("p06a").style.color = "white";
+	document.getElementById("p07").style.backgroundColor = "#663300";
+	document.getElementById("p07a").style.color = "white";
+	index = 2;
+}
+
+function showFour()
+{
+	document.getElementById("p01").style.backgroundColor = "#663300";
+	document.getElementById("p01a").style.color = "white";
+	document.getElementById("p02").style.backgroundColor = "#663300";
+	document.getElementById("p02a").style.color = "white";
+	document.getElementById("p03").style.backgroundColor = "#663300";
+	document.getElementById("p03a").style.color = "white";
+	document.getElementById("p04").style.backgroundColor = "#dfd994";
+	document.getElementById("p04a").style.color = "black";
+	document.getElementById("p05").style.backgroundColor = "#663300";
+	document.getElementById("p05a").style.color = "white";
+	document.getElementById("p06").style.backgroundColor = "#663300";
+	document.getElementById("p06a").style.color = "white";
+	document.getElementById("p07").style.backgroundColor = "#663300";
+	document.getElementById("p07a").style.color = "white";
+	index = 3;
+}
+
+function showFive()
+{
+	document.getElementById("p01").style.backgroundColor = "#663300";
+	document.getElementById("p01a").style.color = "white";
+	document.getElementById("p02").style.backgroundColor = "#663300";
+	document.getElementById("p02a").style.color = "white";
+	document.getElementById("p03").style.backgroundColor = "#663300";
+	document.getElementById("p03a").style.color = "white";
+	document.getElementById("p04").style.backgroundColor = "#663300";
+	document.getElementById("p04a").style.color = "white";
+	document.getElementById("p05").style.backgroundColor = "#dfd994";
+	document.getElementById("p05a").style.color = "black";
+	document.getElementById("p06").style.backgroundColor = "#663300";
+	document.getElementById("p06a").style.color = "white";
+	document.getElementById("p07").style.backgroundColor = "#663300";
+	document.getElementById("p07a").style.color = "white";
+	index = 4;
+}
+
+function showSix()
+{
+	document.getElementById("p01").style.backgroundColor = "#663300";
+	document.getElementById("p01a").style.color = "white";
+	document.getElementById("p02").style.backgroundColor = "#663300";
+	document.getElementById("p02a").style.color = "white";
+	document.getElementById("p03").style.backgroundColor = "#663300";
+	document.getElementById("p03a").style.color = "white";
+	document.getElementById("p04").style.backgroundColor = "#663300";
+	document.getElementById("p04a").style.color = "white";
+	document.getElementById("p05").style.backgroundColor = "#663300";
+	document.getElementById("p05a").style.color = "white";
+	document.getElementById("p06").style.backgroundColor = "#dfd994";
+	document.getElementById("p06a").style.color = "black";
+	document.getElementById("p07").style.backgroundColor = "#663300";
+	document.getElementById("p07a").style.color = "white";
+	index = 5;
+}
+
+function showSeven()
+{
+	document.getElementById("p01").style.backgroundColor = "#663300";
+	document.getElementById("p01a").style.color = "white";
+	document.getElementById("p02").style.backgroundColor = "#663300";
+	document.getElementById("p02a").style.color = "white";
+	document.getElementById("p03").style.backgroundColor = "#663300";
+	document.getElementById("p03a").style.color = "white";
+	document.getElementById("p04").style.backgroundColor = "#663300";
+	document.getElementById("p04a").style.color = "white";
+	document.getElementById("p05").style.backgroundColor = "#663300";
+	document.getElementById("p05a").style.color = "white";
+	document.getElementById("p06").style.backgroundColor = "#dfd994";
+	document.getElementById("p06a").style.color = "white";
+	document.getElementById("p07").style.backgroundColor = "#dfd994";
+	document.getElementById("p07a").style.color = "black";
+	index = 6;
+}
+
 function visitTopic1()
 {
 	sessionStorage.setItem( "topic1", "visited" );
 	checkVisits()
+	showOne()
 	}
 
 function visitTopic2()
 {
 	sessionStorage.setItem( "topic2", "visited" );
 	checkVisits()
+	showTwo()
 	}
 
 function visitTopic2a()
 {
 	sessionStorage.setItem( "topic2a", "visited" );
 	checkVisits()
+	showTwo()
 	}
 
 function visitTopic2b()
 {
 	sessionStorage.setItem( "topic2b", "visited" );
 	checkVisits()
+	showTwo()
 	}
 
 function visitTopic3()
 {
 	sessionStorage.setItem( "topic3", "visited" );
 	checkVisits()
+	showThree()
 	}
 
 function visitTopic3a()
 {
 	sessionStorage.setItem( "topic3a", "visited" );
 	checkVisits()
+	showThree()
 	}
 
 function visitTopic3b()
 {
 	sessionStorage.setItem( "topic3b", "visited" );
 	checkVisits()
+	showThree()
 	}
 
 function visitTopic3c()
 {
 	sessionStorage.setItem( "topic3c", "visited" );
 	checkVisits()
+	showThree()
 	}
 
 function visitTopic3d()
 {
 	sessionStorage.setItem( "topic3d", "visited" );
 	checkVisits()
+	showThree()
 	}
 
 function visitTopic3e()
 {
 	sessionStorage.setItem( "topic3e", "visited" );
 	checkVisits()
+	showThree()
 	}
 
 function visitTopic4()
 {
 	sessionStorage.setItem( "topic4", "visited" );
 	checkVisits()
+	showFour()
 	}
 
 function visitTopic4a()
 {
 	sessionStorage.setItem( "topic4a", "visited" );
 	checkVisits()
+	showFour()
 	}
 
 function visitTopic4b()
 {
 	sessionStorage.setItem( "topic4b", "visited" );
 	checkVisits()
+	showFour()
 	}
 
 function visitTopic4c()
 {
 	sessionStorage.setItem( "topic4c", "visited" );
 	checkVisits()
+	showFour()
 	}
 
 function visitTopic4d()
 {
 	sessionStorage.setItem( "topic4d", "visited" );
 	checkVisits()
+	showFour()
 	}
 
 function visitTopic5()
 {
 	sessionStorage.setItem( "topic5", "visited" );
 	checkVisits()
+	showFive()
 	}
 
 function visitTopic5a()
 {
 	sessionStorage.setItem( "topic5a", "visited" );
 	checkVisits()
+	showFive()
 	}
 
 function visitTopic5b()
 {
 	sessionStorage.setItem( "topic5b", "visited" );
 	checkVisits()
+	showFive()
 	}
 
 function visitTopic5c()
 {
 	sessionStorage.setItem( "topic5c", "visited" );
 	checkVisits()
+	showFive()
 	}
 
 function visitTopic6()
 {
 	sessionStorage.setItem( "topic6", "visited" );
 	checkVisits()
+	showSix()
 	}
 
 function visitTopic7()
 {
 	sessionStorage.setItem( "topic7", "visited" );
 	checkVisits()
+	showSeven()
 	}
 
 function checkVisits()
