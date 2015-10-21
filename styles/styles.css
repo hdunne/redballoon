@@ -104,6 +104,22 @@ body
     float: right;
 }
 
+.img-strip
+{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin :0;
+    list-style-type: none;
+}
+
+.img-strip > li
+{
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
 .ref
 {
 	font-size: 14px;
