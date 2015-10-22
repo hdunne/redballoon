@@ -99,6 +99,11 @@ body
 	z-index:3;
 }
 
+form
+{
+	font-size: 14px;
+}
+
 .right
 {
     float: right;
