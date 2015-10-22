@@ -4,6 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/hot-spots.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -35,14 +36,46 @@
 				<article>
 					
 					<div id="main-info">
-					<header>
-						<h1>Quiz 4</h1>
-					</header>
-						<ul>
-						<li>?</li>
-						
-						</ul>
+					<form id="hot-spots" name="hot-spots" action="javascript:processQuiz3e();">
+					
+            	<h1>Hotspot Activity</h1>
+            </header>
+            
+            <section>
+            	<p>Hover your mouse over each item to learn its equivalent.</p>
+				
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><p>Honey Extractor</p></div> 
 					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><p>Apitherapy</p></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><p>Royal Jelly</p></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><p>Propolis</p></div>
+					</div>
+				</div>
+				    
+            </section>
+					
+					
+					
+					
+					
+					
+					
+					
 					
 				</article>
 			
