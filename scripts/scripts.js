@@ -112,7 +112,6 @@ function finishCourse()
 	  });
 	});
 */
-
 var index = 0;
 
 function showOne()
