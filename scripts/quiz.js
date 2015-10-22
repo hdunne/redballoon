@@ -21,8 +21,11 @@ function processQuiz3e()
 			score = score + 1;
 		}
 	
+	
 	alert( "You got " + score + " correct!");
 }
+
+
 
 function processQuizfinal()
 {
