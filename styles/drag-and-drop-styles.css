@@ -5,18 +5,18 @@
 	width: 90px;
 }
 
-h3
+h4
 {
- 	margin: 4px 0px 0px 0px;
+ 	margin: 0px 0px 0px 0px;
 }
 
 .dragger
 {
 	border: solid thin #000000;
-	background: #999999;
+	background: #FFF380;
 	
 	text-align: center;
-	height: 50px;
+	height: 40px;
 	width: 150px;
 	vertical-align: center;
 	cursor: move;
@@ -33,10 +33,10 @@ h3
 .draggerbay
 {
 	border: dashed thin #000000;
-	height: 50px;
+	height: 40px;
 	width: 150px;
 	text-align: center;
-	background: #ccccee;
+	background: #FFFFC2;
 	font-size: 10px;
 }
 
