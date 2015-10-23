@@ -1,8 +1,8 @@
 .column
 {
 	display: table-cell;
-	padding: 50px;
-	width: 200px;
+	padding: 25px;
+	width: 100px;
 }
 
 .dragger
@@ -22,6 +22,7 @@
 .dragger p
 {
 	font-weight: bold;
+	font-size: 10px;
 }
 
 .draggerbay
@@ -31,6 +32,7 @@
 	width: 160px;
 	text-align: center;
 	background: #ccccee;
+	font-size: 10px;
 }
 
 [draggable=true] 
