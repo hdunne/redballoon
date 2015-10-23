@@ -1,8 +1,8 @@
 .column
 {
 	display: table-cell;
-	padding: 25px;
-	width: 100px;
+	padding: 15px;
+	width: 90px;
 }
 
 .dragger
@@ -11,8 +11,8 @@
 	background: #999999;
 	
 	text-align: center;
-	height: 60px;
-	width: 160px;
+	height: 50px;
+	width: 150px;
 	vertical-align: center;
 	cursor: move;
 	position: relative;
@@ -28,8 +28,8 @@
 .draggerbay
 {
 	border: dashed thin #000000;
-	height: 60px;
-	width: 160px;
+	height: 50px;
+	width: 150px;
 	text-align: center;
 	background: #ccccee;
 	font-size: 10px;
