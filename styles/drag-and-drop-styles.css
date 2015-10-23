@@ -5,6 +5,11 @@
 	width: 90px;
 }
 
+h3
+{
+ 	margin: 4px 0px 0px 0px;
+}
+
 .dragger
 {
 	border: solid thin #000000;
