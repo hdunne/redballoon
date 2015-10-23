@@ -4,6 +4,8 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/drag-and-drop.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -30,15 +32,54 @@
 		<div id="main-content">
 		<section>
 			<div id="objective">
-			<p><strong>Topic Objective:</strong> Enter text here.</p>
+			<p><strong>Instructions:</strong> Match each picture of a tool with the description of it's use. When completed, submit your answers then move on
+			to the next section - Products.</p>
 			</div>
+			
 				<article>
 					
 					<div id="main-info">
-				<h1>Hive Building Assessment Activity</h1>
-						Now let's check your understanding. Please click the link below to be taken to the assessment activity.
-						<p><a href="drag-and-drop2.html" src="drag-and-drop2.html">Drag and Drop Activity</a></p>
-					</div>
+				<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+							
+				<div class="column">
+						<h4>Draggers</h4>
+					 	<div id="d1" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Drag this to bay 4</p></div><br/>  
+				     	<div id="d2" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Drag this to bay 1</p></div><br/>                        
+				 		<div id="d3" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Drag this to bay 2</p></div><br/>  
+					 	<div id="d4" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Drag this bay 3</p></div><br/>  
+				</div>
+				
+				    
+				<div class="column">
+						<h4>Dragger Bays</h4>
+				     	<div id="db2" value="1" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Bay 1</p></div><br/>                        
+				 		<div id="db3" value="3" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Bay 2</p></div><br/>  
+					 	<div id="db4" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Bay 3</p></div><br/> 
+					 	<div id="db1" value="0" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Bay 4</p></div><br/>  
+				</div>
+				<span id="response">&nbsp;</span>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
 				</article>
 			
 			<div id="sub-navigation">
