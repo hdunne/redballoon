@@ -84,13 +84,14 @@ h1, h3, h4
 #main-info
 {
 	position: absolute;
+	back-ground color: #C2D1B2;
 	border: 1px solid black;
 	top: 60px;
 	left: 170px;
 	width: 420px;
 	height: 342px;
 	padding: 10px;
-	back-ground color: #C2D1B2;
+	
 	font-size: 16px;
 	vertical-align:10px;
 	overflow: auto;
