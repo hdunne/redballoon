@@ -51,19 +51,19 @@ function processQuizfinal()
 		}
 	var q4 = document.forms.quiz2.question4;
 	
-	if( q4[ 2 ].checked )
+	if( q4[ 3 ].checked )
 		{
 			score = score + 1;
 		}
 	var q5 = document.forms.quiz2.question5;
 	
-	if( q5[ 3 ].checked )
+	if( q5[ 4 ].checked )
 		{
 			score = score + 1;
 		}
 	var q6 = document.forms.quiz2.question6;
 	
-	if( q6[ 4 ].checked )
+	if( q6[ 5 ].checked )
 		{
 			score = score + 1;
 		}
