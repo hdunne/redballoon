@@ -49,36 +49,25 @@ function processQuizfinal()
 		{
 			score = score + 1;
 		}
-	var q4 = document.forms.quiz2.question3;
+	var q4 = document.forms.quiz2.question4;
 	
 	if( q4[ 2 ].checked )
 		{
 			score = score + 1;
 		}
-	var q5 = document.forms.quiz2.question3;
+	var q5 = document.forms.quiz2.question5;
 	
 	if( q5[ 3 ].checked )
 		{
 			score = score + 1;
 		}
-	var q6 = document.forms.quiz2.question3;
+	var q6 = document.forms.quiz2.question6;
 	
 	if( q6[ 4 ].checked )
 		{
 			score = score + 1;
 		}
-	var q7 = document.forms.quiz2.question3;
-	
-	if( q7[ 5 ].checked )
-		{
-			score = score + 1;
-		}
-	var q8 = document.forms.quiz2.question3;
-	
-	if( q8[ 6 ].checked )
-		{
-			score = score + 1;
-		}
+
 	
 	alert( "You got " + score + " correct!");
 }
