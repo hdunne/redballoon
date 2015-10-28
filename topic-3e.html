@@ -4,6 +4,8 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script src="scripts/quiz.js" language="javascript">
+		</script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -30,7 +32,7 @@
 		<div id="main-content">
 		<section>
 			<div id="objective">
-			<p><strong>Topic Objective:</strong> Enter text here.</p>
+			<p><strong>Instructions:</strong> Select one answer per question then submit your answers. When completed, move to next section: Hive Building.</p>
 			</div>
 				<article>
 					
@@ -39,10 +41,10 @@
 			<h4>Bee Life Knowledge Assessment</h4>
 			<label for="question1">What type of bee is the largest and can lay eggs?</label>
 			<br/>
-			<input type="radio" id="question1" name="question1" value="1">
-			A. Drone</input><br/>
 			<input type="radio" id="question1" name="question1" value="0">
-			B. Queen</input><br/>
+			A. Queen</input><br/>
+			<input type="radio" id="question1" name="question1" value="1">
+			B. Drone</input><br/>
 			<input type="radio" id="question1" name="question1" value="2">
 			C. Worker</input><br/><br/>
 
@@ -50,19 +52,19 @@
 			<br/>
 			<input type="radio" id="question2" name="question2" value="0">
 			A. Drone</input><br/>
-			<input type="radio" id="question2" name="question2" value="2">
-			B. Queen</input><br/>
 			<input type="radio" id="question2" name="question2" value="1">
-			C. Worker</input><br/><br/>
+			B. Worker</input><br/>
+			<input type="radio" id="question2" name="question2" value="2">
+			C. Queen</input><br/><br/>
 
 			<label for="question3">What type of bee does not gather pollen and doesn't have a stinger?</label>
    			<br/>
-			<input type="radio" id="question3" name="question3" value="2">
-			A. Drone</input><br/>
+			<input type="radio" id="question3" name="question3" value="0">
+			A. Worker</input><br/>
 			<input type="radio" id="question3" name="question3" value="1">
 			B. Queen</input><br/>
-			<input type="radio" id="question3" name="question3" value="0">
-			C. Worker</input><br/><br/>
+			<input type="radio" id="question3" name="question3" value="2">
+			C. Drone</input><br/><br/>
 
 			<input type="reset" value="Reset"/>
 			&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
