@@ -10,22 +10,22 @@ function showText( number )
 	if( number == 1 )
 	{
 		document.getElementById( "output-text" ).innerHTML = "Honey Extractor - machinery that uses a centrifugal force" +
-		"that spins the combs causing honey to fly off.";
+		" that spins the combs causing honey to fly off.";
 	}
 	else if( number == 2 )
 	{
 		document.getElementById( "output-text" ).innerHTML = "Apitherapy - known as 'bee therapy' is the" + 
-		"medicinal use of products made by honeybees.";
+		" medicinal use of products made by honeybees.";
 	}
 	else if( number == 3 )
 	{
 		document.getElementById( "output-text" ).innerHTML = "Royal Jelly - produced by salivary glands, possesses" +
-		"anti-inflammatory properties, and help fight off diseases.";
+		" anti-inflammatory properties, and helps fight off diseases.";
 	}
 	else if( number == 4 )
 	{
 		document.getElementById( "output-text" ).innerHTML = "Propolis -  glue produced by bees from" +
-		"beeswax and tree sap";
+		" beeswax and tree sap";
 	}
 }
 
