@@ -36,7 +36,7 @@ function processForm()
 	else
 	{
 		// link back to the same page.
-		document.getElementById( "response" ).innerHTML = "Incorrect!  <a href='index.html'>click here to try again</a>";
+		document.getElementById( "response" ).innerHTML = "Incorrect!  <a href='topic-2b.html'>click here to try again</a>";
 	}
 }
 
@@ -48,7 +48,7 @@ function startDrag( evt )
 	// value corresponds to the dragger bay it's associated with
 	evt.dataTransfer.setData( "sData", evt.target.getAttribute( "value" ) );
 	// when it's dragging show a ghost image (in this case, it's showing itself)
-    evt.dataTransfer.setDragImage( evt.target, 75, 50 );
+    evt.dataTransfer.setDragImage( evt.target, 50, 25 );
     oDragger = evt;
     
     oCurrentDragger = evt.target;
