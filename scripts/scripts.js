@@ -333,9 +333,7 @@ function checkVisits()
 	var value5c = sessionStorage.getItem( "topic5c" );
 	var value6 = sessionStorage.getItem( "topic6" );
 	var value7 = sessionStorage.getItem( "topic7" );
-	
-	
-	
+		
 	/*if( value1 == "visited" && value7 == "visited"
 		 )
 	{
@@ -398,6 +396,5 @@ function checkVisits()
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "congrats" ).innerHTML = "Congratulations! You have finished all the modules. Please take the final Quiz (from the menu on the left).";
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "congrats" ).style.color = "red";
 	}
-	
 }
 
