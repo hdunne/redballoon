@@ -163,6 +163,11 @@ form
 	padding: 5px;
 }
 
+#player {
+ width: 240px;
+}​
+
+
 #transcript
 {
 	color: black;
