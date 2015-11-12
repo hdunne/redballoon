@@ -4,13 +4,13 @@
 		<meta charset="utf-8"/>
 		<title>Buzzworthy</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic3c()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-life.png">
+			<img src="images/banner-life.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -29,7 +29,7 @@
 		<div id="main-content">
 		<section>
 			<div id="objective">
-			<p><strong>Topic Objective:</strong> Enter text here.</p>
+			<p><strong>Topic Objective:</strong> Understand the lifecycle of bees.</p>
 			</div>
 				<article>
 					
@@ -37,7 +37,7 @@
 					<header>
 						<h1>Roles</h1>
 					</header>
-					
+					<iframe width="400" height="315" src="https://www.youtube.com/embed/aNoqN-IX5qs" frameborder="0" allowfullscreen></iframe>
 						<ul>
 							<li>Queen (reproductive female)</li>
 						<ul>
@@ -69,20 +69,19 @@
 							<li>cannot sting</li> 
 						</ul>
 						</ul>
-						<br/> <br/>
-						<iframe width="400" height="315" src="https://www.youtube.com/embed/aNoqN-IX5qs" frameborder="0" allowfullscreen></iframe>
 					</div>
 					
 				</article>
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/why-bee-icon.png" alt="icon" title="icon" /><a href="topic-3.html">Bee Life</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href="topic-3a.html">Honey Bees</a>&#160;&#160;
-					<img src="images/beelife-icon.png" alt="icon" title="icon" /><a href="topic-3b.html">Life Cycle</a>&#160;&#160;
-					<img src="images/queenbee-icon.png" alt="icon" title="icon" /><a href="topic-3c.html">Roles</a>&#160;&#160;
-					<img src="images/beepest-icon.png" alt="icon" title="icon" /><a href="topic-3d.html">Diseases &#38; Pests</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href="topic-3e.html">Knowledge Assessment</a> 
+					<div class="sublink1">This section has 6 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href="topic-3.html">Bee Life</a></div>
+					<div class="sublink" id="sublink3"><a href="topic-3a.html">Honey Bees</a></div>
+					<div class="sublink" id="sublink4"><a href="topic-3b.html">Life Cycle</a></div>	
+					<div class="sublink" id="sublink5"><a href="topic-3c.html">Roles</a></div>
+					<div class="sublink" id="sublink6"><a href="topic-3d.html">Diseases &#38; Pests</a></div>
+					<div class="sublink" id="sublink7"><a href="topic-3e.html">Knowledge Assessment</a></div>	
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -91,8 +90,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p> 
 						There are three types of bees found in a hive:  
 						queen bee, worker bee, and drone bee. 
@@ -127,9 +126,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls" loop="loop" autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-3c.ogg" type="audio/ogg">
 							<source src="audio/topic-3c.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

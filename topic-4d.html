@@ -7,13 +7,13 @@
 		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
 		<script language="javascript" src="scripts/drag-and-drop1.js"></script>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic4d()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-hive.png">
+			<img src="images/banner-hive.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -84,11 +84,12 @@
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/why-bee-icon.png" alt="icon" title="icon" /><a href = "topic-4.html">Hive Building Costs</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href = "topic-4a.html">Other Resources</a>&#160;&#160;
-					<img src="images/queenbee-icon.png" alt="icon" title="icon" /><a href = "topic-4b.html">The Equipment</a>&#160;&#160;
-					<img src="images/apiary.png" alt="icon" title="icon" /><a href = "topic-4c.html">The Hive</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href = "topic-4d.html">Knowledge Assessment</a> 
+					<div class="sublink1">This section has 5 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href = "topic-4.html">Hive Building Costs</a></div>
+					<div class="sublink" id="sublink3"><a href = "topic-4a.html">Other Resources</a></div>
+					<div class="sublink" id="sublink4"><a href = "topic-4b.html">The Equipment</a></div>	
+					<div class="sublink" id="sublink5"><a href = "topic-4c.html">The Hive</a></div>
+					<div class="sublink" id="sublink6"><a href = "topic-4d.html">Knowledge Assessment</a></div>
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -97,8 +98,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p>
 						Now let's check your understanding. <br/> <br/>
 						Please drag the answers from the left column to 
@@ -112,9 +113,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls"  autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-4d.ogg" type="audio/ogg">
 							<source src="audio/topic-4d.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

@@ -5,13 +5,13 @@
 		<title>Buzzworthy</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic4c()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-hive.png">
+			<img src="images/banner-hive.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -47,25 +47,23 @@
 							<li><a href="images/top-bar.pdf" target="_blank"> Top Bar </a> </li>
 							<li><a href="images/warre.pdf" target="_blank"> Warre </a></li>
 						</ul>
-						
 							<li>Introducing bees to the hive</li>
 							<li>Hive Maintenance</li>
 							<li>Prevent Swarming</li>
-						
-						
 						</ul>
-						<br/> <br/>
+						
 						<iframe width="400" height="315" src="https://www.youtube.com/embed/zDZDYgBkCx0" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</article>
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/why-bee-icon.png" alt="icon" title="icon" /><a href = "topic-4.html">Hive Building Costs</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href = "topic-4a.html">Other Resources</a>&#160;&#160;
-					<img src="images/queenbee-icon.png" alt="icon" title="icon" /><a href = "topic-4b.html">The Equipment</a>&#160;&#160;
-					<img src="images/apiary.png" alt="icon" title="icon" /><a href = "topic-4c.html">The Hive</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href = "topic-4d.html">Knowledge Assessment</a> 
+					<div class="sublink1">This section has 5 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href = "topic-4.html">Hive Building Costs</a></div>
+					<div class="sublink" id="sublink3"><a href = "topic-4a.html">Other Resources</a></div>
+					<div class="sublink" id="sublink4"><a href = "topic-4b.html">The Equipment</a></div>	
+					<div class="sublink" id="sublink5"><a href = "topic-4c.html">The Hive</a></div>
+					<div class="sublink" id="sublink6"><a href = "topic-4d.html">Knowledge Assessment</a></div>
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -74,9 +72,9 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-					<div id="transcript">
+					<div class="transcript">
 				
-					<!--- include your transcript here --->
+					<!-- include your transcript here -->
 					<p>
 						The most common type of hive used in the United States is the Langstroth. Starting from the
 						bottom you have the stand which lifts the hive up off the ground, then you have the bottom board 
@@ -158,9 +156,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls"  autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-4c.ogg" type="audio/ogg">
 							<source src="audio/topic-4c.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

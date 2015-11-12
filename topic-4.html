@@ -5,13 +5,13 @@
 		<title>Buzzworthy</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic4()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-hive.png">
+			<img src="images/banner-hive.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -57,21 +57,22 @@
 									<li>nuc $180</li>
 									<li>bees $135</li> 
 								</ul>
-							*Shipping not included in any of these estimates
-						
 						</ul>
+						<p>*Shipping not included in any of these estimates</p>
 					</div>
 					
 				</article>
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/why-bee-icon.png" alt="icon" title="icon" /><a href = "topic-4.html">Hive Building Costs</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href = "topic-4a.html">Other Resources</a>&#160;&#160;
-					<img src="images/queenbee-icon.png" alt="icon" title="icon" /><a href = "topic-4b.html">The Equipment</a>&#160;&#160;
-					<img src="images/apiary.png" alt="icon" title="icon" /><a href = "topic-4c.html">The Hive</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href = "topic-4d.html">Knowledge Assessment</a> 
+					<div class="sublink1">This section has 5 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href = "topic-4.html">Hive Building Costs</a></div>
+					<div class="sublink" id="sublink3"><a href = "topic-4a.html">Other Resources</a></div>
+					<div class="sublink" id="sublink4"><a href = "topic-4b.html">The Equipment</a></div>	
+					<div class="sublink" id="sublink5"><a href = "topic-4c.html">The Hive</a></div>
+					<div class="sublink" id="sublink6"><a href = "topic-4d.html">Knowledge Assessment</a></div>
 				</nav>
+				
 			</div>
 			<div id="aside-info">
 				<aside>
@@ -79,8 +80,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p>Beekeeping is a unique hobby and can be very profitable, but before beginning, check the local laws to determine if there is any restrictions to beekeeping.  There may be restrictions on the number of hives, or a registration fee may also be required.  Check with the neighbors; there maybe some people who are severely allergic to bees which could be life-threatening.</p>
 
 					
@@ -139,9 +140,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls"  autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-4.ogg" type="audio/ogg">
 							<source src="audio/topic-4.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

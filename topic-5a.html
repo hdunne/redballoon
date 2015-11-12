@@ -5,13 +5,13 @@
 		<title>Buzzworthy</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic5a()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-prod.png">
+			<img src="images/banner-prod.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -48,7 +48,6 @@
 						<li>Food Grade Bucket </li>
 						<li>Containers</li>
 						</ul>
-						</br> <br/>
 						<iframe width="400" height="315" src="https://www.youtube.com/embed/AfC1JBGx2TY" frameborder="0" allowfullscreen></iframe>
 					</div>
 					
@@ -56,10 +55,11 @@
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/honey-jar-icon.png" alt="icon" title="icon" /><a href = "topic-5.html">Products</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href = "topic-5a.html">Harvesting</a>&#160;&#160;
-					<img src="images/beelife-icon.png" alt="icon" title="icon" /><a href = "topic-5b.html">Pollination Services</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href = "topic-5c.html">Key Terms</a> 
+					<div class="sublink1">This section has 4 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href = "topic-5.html">Products</a></div>
+					<div class="sublink" id="sublink3"><a href = "topic-5a.html">Harvesting</a></div>
+					<div class="sublink" id="sublink4"><a href = "topic-5b.html">Pollination Services</a></div>	
+					<div class="sublink" id="sublink5"><a href = "topic-5c.html">Key Terms</a></div>
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -68,8 +68,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p>
 						The best time to harvest the honey is when all the frames are 80% capped and full,
 						and when the nectar is cured.  If the nectar is not cured, it will be runny this
@@ -114,9 +114,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls"  autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-5a.ogg" type="audio/ogg">
 							<source src="audio/topic-5a.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

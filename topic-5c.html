@@ -8,13 +8,13 @@
 		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
 		
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic5c()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-prod.png">
+			<img src="images/banner-prod.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -77,10 +77,11 @@
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/honey-jar-icon.png" alt="icon" title="icon" /><a href = "topic-5.html">Products</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href = "topic-5a.html">Harvesting</a>&#160;&#160;
-					<img src="images/beelife-icon.png" alt="icon" title="icon" /><a href = "topic-5b.html">Pollination Services</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href = "topic-5c.html">Key Terms</a> 
+					<div class="sublink1">This section has 4 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href = "topic-5.html">Products</a></div>
+					<div class="sublink" id="sublink3"><a href = "topic-5a.html">Harvesting</a></div>
+					<div class="sublink" id="sublink4"><a href = "topic-5b.html">Pollination Services</a></div>	
+					<div class="sublink" id="sublink5"><a href = "topic-5c.html">Key Terms</a></div>
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -89,8 +90,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p>
 						Now let's learn some important beekeeping terms. <br/> <br/>
 						Hover over each term to see the definition.
@@ -102,9 +103,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls"  autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-5c.ogg" type="audio/ogg">
 							<source src="audio/topic-5c.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

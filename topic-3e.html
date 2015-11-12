@@ -7,13 +7,13 @@
 		<script src="scripts/quiz.js" language="javascript">
 		</script>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic3e()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-life.png">
+			<img src="images/banner-life.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -76,12 +76,13 @@
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/why-bee-icon.png" alt="icon" title="icon" /><a href="topic-3.html">Bee Life</a>&#160;&#160;
-					<img src="images/beehoney-icon.png" alt="icon" title="icon" /><a href="topic-3a.html">Honey Bees</a>&#160;&#160;
-					<img src="images/beelife-icon.png" alt="icon" title="icon" /><a href="topic-3b.html">Life Cycle</a>&#160;&#160;
-					<img src="images/queenbee-icon.png" alt="icon" title="icon" /><a href="topic-3c.html">Roles</a>&#160;&#160;
-					<img src="images/beepest-icon.png" alt="icon" title="icon" /><a href="topic-3d.html">Diseases &#38; Pests</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href="topic-3e.html">Knowledge Assessment</a> 
+					<div class="sublink1">This section has 6 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href="topic-3.html">Bee Life</a></div>
+					<div class="sublink" id="sublink3"><a href="topic-3a.html">Honey Bees</a></div>
+					<div class="sublink" id="sublink4"><a href="topic-3b.html">Life Cycle</a></div>	
+					<div class="sublink" id="sublink5"><a href="topic-3c.html">Roles</a></div>
+					<div class="sublink" id="sublink6"><a href="topic-3d.html">Diseases &#38; Pests</a></div>
+					<div class="sublink" id="sublink7"><a href="topic-3e.html">Knowledge Assessment</a></div>	
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -90,8 +91,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p>
 						Now let's check your understanding. <br/> <br/>
 						Please answer each of the questions by selecting the radio button
@@ -105,9 +106,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-					<audio id="player" controls="controls"  autoplay="autoplay">
+					<p id="audio">
+						<audio id="player" controls="controls"  autoplay="autoplay">
+							<source src="audio/topic-3e.ogg" type="audio/ogg">
 							<source src="audio/topic-3e.mp3" type="audio/mpeg">
 						</audio>
+					</p>
 				</section>
 				</aside>
 			</div>

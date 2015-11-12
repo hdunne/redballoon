@@ -5,13 +5,13 @@
 		<title>Buzzworthy</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic7()">
 	<div id="grad"> </div>
 	<div id="banner">
 		<header>
-			<img src="images/banner-ref.png">
+			<img src="images/banner-ref.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -151,8 +151,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
+					<!-- include your transcript here -->
 					<p>
 						This is a list of the resources we used for our information and media.
 					</p>
@@ -163,9 +163,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
+				<p id="audio">
 					<audio id="player" controls="controls"  autoplay="autoplay">
-							<source src="audio/topic-7.mp3" type="audio/mpeg">
-						</audio>
+						<source src="audio/topic-7.ogg" type="audio/ogg">
+						<source src="audio/topic-7.mp3" type="audio/mpeg">
+					</audio>
+				</p>
 				</section>
 				</aside>
 			</div>
