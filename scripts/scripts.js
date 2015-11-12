@@ -398,3 +398,35 @@ function checkVisits()
 	}
 }
 
+function gradeQuiz1()
+{
+var score = 0;
+/* some code goes here to grade the quiz
+ and to assign a whole number between 0
+ and 100 to the variable score. */
+// call the function to report scores
+parent.reportScores( score );
+} 
+
+function reportScores( score )
+{
+oScorm.set("cmi.score.raw", score );
+oScorm.set("cmi.score.min", 0 );
+oScorm.set("cmi.score.max", 100 );
+oScorm.set("cmi.score.scaled", score / 100 );
+oScorm.set( "cmi.success_status", "passed" );
+oScorm.set( "cmi.completion_status", "completed" );
+oScorm.set( "cmi.lesson_status", "passed" );
+oScorm.save();
+} 
+
+loadOLM();
+
+initializeSCORM(); 
+
+finishOLM(); 
+
+
+
+
+
