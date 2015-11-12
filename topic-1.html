@@ -3,20 +3,19 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Buzzworthy</title>
-		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		
+		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>		
 		<style>
 		body {
 		background-image: url("images/purpleflower_big.jpg");
 		background-repeat: no-repeat;
 		}
 		</style>
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic1()" >
 	<div id="banner">
 		<header>
-			<img src="images/banner-intro.png">
+			<img src="images/banner-intro.png" alt="banner" title="banner">
 		</header>
 	</div>
 			
@@ -37,14 +36,11 @@
 					<img src="images/bee.png" title="bee" alt="bee" />
 				</div>
 		<section>
-			<div id="objective">
-			
-			</div>
+			<div id="objective"></div>
 				<article>
 					<div id="main-info">
 						<header>
 							<h1>Welcome!</h1>
-							
 						</header>
 							<p>
 								Welcome to this online lesson about Apis mellifera, 
@@ -56,13 +52,12 @@
 							<p id="start">
 								After completing all the modules return to this page to gain access to the final quiz.
 							</p>
-							<!--  <p id="test"> </p>-->
 							<p id="congrats"> </p>
 						</div>
 				</article>
 			
 			<div id="sub-navigation">
-<ul class="img-strip">
+				<ul class="img-strip">
 					<li><img src="images/yellowbee-intro.jpg" title="Yellow bee" alt="Yellow Bee" /></li>
 					<li><img src="images/collect-honey-intro.jpg" title="Collecting honey" alt="Collecting honey" /></li>
 					<li><img src="images/whiteandpurple-intro.jpg" title="Collecting Pollen" alt="Collecting pollen" /></li>
@@ -70,15 +65,16 @@
 					<li><img src="images/queen-intro.jpg" title="Queen bee" alt="Queen bee" /></li>
 					<li><img src="images/honeycomb-bee-intro.jpg" title="Honeycomb" alt="Honeycomb" /></li>
 					<li><img src="images/bluebonnet-intro.jpg" title="Bluebonnet" alt="Bluebonnet" /></li>
-					</ul></div>
-			<div id="aside-info">
-				<aside>
-				<section>
+				</ul>
+			</div>
+			
+		<div id="aside-info">
+		<aside>
+			<section>
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
+				<div class="transcript">
 					<p>
 						Enjoy learning more about the European honeybee! 
 						At the end of this educational module there will be 
@@ -90,18 +86,23 @@
 						for you to learn more from.  Please visit all the pages, to earn a check
 						mark for each category. This will enable you to gain access to the quiz 
 						and check your understanding. 
-					</p>
-                 
+					</p>   
+					<p class="tp">
+						Please explore each of the categories listed on the left in any order
+						you would like. Each category will have additional pages on the bottom
+						for you to learn more from.  Please visit all the pages, to earn a check
+						mark for each category. This will enable you to gain access to the quiz 
+						and check your understanding. 
+					</p>   
 				</div>
 				</section>
 				<section>
-						<header>
+					<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
-				
 					<p id="audio">
-						<audio id="player" controls="controls"  autoplay="autoplay">
-							
+						<audio id="player" controls="controls">
+							<source src="audio/topic-1.ogg" type="audio/ogg">
 							<source src="audio/topic-1.mp3" type="audio/mpeg">
 						</audio>
 					</p>
