@@ -9,7 +9,7 @@ body
 
 h1, h3, h4
 {
- 	margin: 5px 0px 10px 0px;
+ 	margin: 5px 0px 5px 0px;
 }
 
 #b-animation
@@ -84,7 +84,7 @@ h1, h3, h4
 #main-info
 {
 	position: absolute;
-	border: 1px solid black;
+	border: 1px solid #cccccc;
 	top: 60px;
 	left: 170px;
 	width: 420px;
@@ -127,18 +127,6 @@ form
 	margin: 0;
 }
 
-.subnav
-{
-    float: left;
-    width: 10em;
-    text-decoration: none;
-    color: white;
-    background-color: purple;
-    padding: 0.2em 2em;
-}
-
-.subnav > a:hover {background-color: #ff3300;}
-
 .ref
 {
 	font-size: 14px;
@@ -152,9 +140,19 @@ form
 	width: 242px;
 }
 
+.transcript
+{
+	position: relative;
+	color: black;
+	font-size: 14px;
+	height: 250px;
+	width: 230px;
+	padding: 10px;
+	overflow: auto;
+}
+
 .aside-title-audio
 {
-	/*background: #88c003;*/
 	background-color: #5c8533;
 	width: 242px;
 	font-size: 14px;
@@ -163,24 +161,14 @@ form
 	padding: 5px;
 }
 
-#player {
- width: 100%;
-}​
-
-
-#transcript
+#player
 {
-	color: black;
-	padding: 10px;
-	font-size: 14px;
-	overflow: auto;
-	height: 250px;
-	width: 230px;
+	width: 100%;
 }
 
 #audio
 {
-	padding: 5px;
+	padding: 10px;
 }
 
 #footer
@@ -224,7 +212,6 @@ nav > p
 	/*text-decoration: none;*/
 }
 
-
 #quiz-link-box
 {
 	display:none
@@ -249,26 +236,76 @@ nav > p
     height: 80px;
     width: 890px;
     padding: 4px;
-    text-align: center;
     box-shadow: 0px 0px 5px #666666;
     z-index: 4;
 }
 
-/*
-a:link {
-    color: white;
-    font-weight: bold; 
+.sublink1
+{
+	position: absolute;
+	height: 80px;
+	width: 160px;
+	top: 5px;
+	left: 20px;
+	font-weight: bold;
+	padding: 0px;
+	z-index: 20;
 }
 
-a:hover {
-    background-color: yellow;
-} 
-
-a.current {
-  background:red;
-  color:white;
+.sublink2
+{
+	position: absolute;
+	height: 60px;
+	width: 80px;
+	top: 5px;
+	left: 240px;
+	padding: 5px;
+	border: 2px solid #fbe864;
+	background-color: #5c8533;
+	z-index: 20;
 }
-*/
+
+.sublink
+{
+	position: absolute;
+	height: 60px;
+	width: 80px;
+	top: 5px;
+	left: 370px;
+	border-radius: 10px;
+	padding: 5px;
+	border: 1px solid #cccccc;
+	background: -webkit-linear-gradient(#ffffff, #ffffff,  #ffffff, #408000); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#ffffff, #ffffff,  #ffffff, #408000); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#ffffff, #ffffff,  #ffffff, #408000); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#ffffff, #ffffff,  #ffffff, #408000); /* Standard syntax (must be last) */
+	z-index: 20;
+}
+
+#sublink3
+{
+	left: 370px;
+}
+
+#sublink4
+{
+	left: 470px;
+}
+
+#sublink5
+{
+	left: 570px;
+}
+
+#sublink6
+{
+	left: 670px;
+}
+
+#sublink7
+{
+	left: 770px;
+}
 
 #content-frame
 {
