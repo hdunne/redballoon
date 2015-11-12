@@ -7,7 +7,7 @@
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		
 		
-		<!--- link your other script files here that are specific to this HTML page here --->
+		<!-- link your other script files here that are specific to this HTML page here -->
 	</head>	
 	<body onload="javascript:parent.visitTopic2();">
 	<div id="grad"> </div>
@@ -37,10 +37,10 @@
 					
 					<div id="main-info">
 					<header>
-						<h1>Why you should keep bees:</h1>
+						<!-- <h1>Why you should keep bees:</h1> -->
 					</header>
-					
-					<p><img class="right" src="images/beekeeper.jpg" title="beekeeper" alt="Beekeeper" /></p>
+					<iframe width="400" height="315" src="https://www.youtube.com/embed/YaaQUGPXtnU" frameborder="0" allowfullscreen></iframe>
+					<!-- <p><img class="right" src="images/beekeeper.jpg" title="beekeeper" alt="Beekeeper" /></p>
 						<ul>
 						<li>Stress Relief </li>
 						<li>Get in tune with nature </li>
@@ -48,18 +48,17 @@
 						<li>Healthy Lifestyle </li>
 						<li>Profit</li>
 						<li>Help bees, the environment, and our way of life </li>
-						</ul>
-						<br/> <br/>
-						<iframe width="400" height="315" src="https://www.youtube.com/embed/YaaQUGPXtnU" frameborder="0" allowfullscreen></iframe>
+						</ul> -->
 					</div>
 					
 				</article>
 			
 			<div id="sub-navigation">
 				<nav>
-					<img src="images/why-bee-icon.png" alt="icon" title="icon" /><a href = "topic-2.html">Why Bees?</a>&#160;&#160;
-					<img src="images/save-icon.png" alt="icon" title="icon" /><a href = "topic-2a.html">Bees Impact on the Planet</a>&#160;&#160;
-					<img src="images/knowledge-bee-icon.png" alt="icon" title="icon" /><a href = "topic-2b.html">Knowledge Assessment</a>
+					<div class="sublink1">This section has 3 topics. Select each topic to complete this section.</div>
+					<div class="sublink2"><a class="navlinks" href = "topic-2.html">Why Bees?</a></div>
+					<div class="sublink" id="sublink3"><a href = "topic-2a.html">Bees Impact on the Planet</a></div>
+					<div class="sublink" id="sublink4"><a href = "topic-2b.html">Knowledge Assessment</a></div>		
 				</nav>
 			</div>
 			<div id="aside-info">
@@ -68,10 +67,8 @@
 					<header>
 						<p class="aside-title-audio">Captions</p>
 					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
-					
-                    <p>
+				<div class="transcript">
+					<p>
 						Keeping honeybees can be a very fufilling hobby.  Some people find it very relaxing and an excellent
 						way to let other concerns go for a time.  Bee keeping requires you to become familiar with the world around you
 						as you monitor the bees and their environment thus putting you more in tune with nature. Of course you get
@@ -79,7 +76,6 @@
 						pollination, and more.  Some of these products may support other hobbies or lifestyle choices such as candle
 						making or greener living.  
 					</p>
-					
 					<p> 
 						A common question is whether or not beekeeping is profitable.  While beekeeping can be profitable as
 						bees do produce many goods and provide many services, it takes a lot of work to make it profitable and 
@@ -97,9 +93,12 @@
 						<header>
 						<p class="aside-title-audio">Audio</p>
 					</header>
+						<p id="audio">
 						<audio id="player" controls="controls" autoplay="autoplay">
+							<source src="audio/topic-2.ogg" type="audio/ogg">
 							<source src="audio/topic-2.mp3" type="audio/mpeg">
 						</audio>
+						</p>
 				</section>
 				</aside>
 			</div>
