@@ -100,6 +100,21 @@ h4
 	overflow: auto;
 	z-index:3;
 }
+#certificate
+{
+	position: absolute;
+	border: 1px solid #cccccc;
+	top: 120px;
+	left: 170px;
+	width: 640px;
+	height: 470px;
+	padding: 10px;
+	font-size: 16px;
+	vertical-align:10px;
+	overflow: auto;
+	z-index:3;
+}
+
 
 form
 {
