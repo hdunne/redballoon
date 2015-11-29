@@ -88,12 +88,43 @@ function initializeSCORM()
 	}
 }
 
-// This function reports the score from the assessment to the LMS
-// This should only be called when the user submits the answers to the quiz
-function reportScores()
-{	
-	oScorm.save();
+//This function is for the certificate AMB
+
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.learner_name" );
+	document.getElementById ( "content-frame" ).
+	contentWindow.document.getElementById ( "user-name" ).innerHTML = learner_name;
 }
+
+function visitQuiz()
+{
+	sessionStorage.setItem( "quiz", "visited" );
+}
+
+function gradeQuiz1()
+{
+var score = 0;
+/* some code goes here to grade the quiz
+ and to assign a whole number between 0
+ and 100 to the variable score. */
+// call the function to report scores AMB
+parent.reportScores( 70 );
+}
+
+// This function reports the score from the assessment to the LMS
+// This should only be called when the user submits the answers to the quiz AMB
+function reportScores( score )
+{
+oScorm.set("cmi.score.raw", score );
+oScorm.set("cmi.score.min", 0 );
+oScorm.set("cmi.score.max", 100 );
+oScorm.set("cmi.score.scaled", score / 100 );
+oScorm.set( "cmi.success_status", "passed" );
+oScorm.set( "cmi.completion_status", "completed" );
+oScorm.set( "cmi.lesson_status", "passed" );
+oScorm.save();
+} 
 
 // This function is called when the window is closed.  It saves and quits the course.
 function finishCourse()
@@ -102,6 +133,9 @@ function finishCourse()
 	oScorm.quit();
 	alert("goodbye")
 }
+
+
+
 
 // This function is supposed to highlight the current page in navigation
 /*function Current(){
