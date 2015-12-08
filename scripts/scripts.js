@@ -423,10 +423,10 @@ function checkVisits()
 		&& value5a == "visited"	&& value5b == "visited" && value5c == "visited"
 		&& value6 == "visited" && value7 == "visited" )
 	{
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "c01" ).style.display = "inline"; 
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline"; 
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link-box" ).style.display = "inline";
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "start" ).style.display = "none";
-	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "c01" ).style.display = "inline"; 
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "congrats" ).innerHTML = "Congratulations! You have finished all the modules. Please take the final Quiz (from the menu on the left).";
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "congrats" ).style.color = "red";
 	}
