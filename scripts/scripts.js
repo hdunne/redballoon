@@ -130,6 +130,7 @@ oScorm.save();
 if (score >= 83)
 	{
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "cert-link" ).style.display = "inline"; 
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById("cert-link-box").style.backgroundColor = "red";
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "cert-link-box" ).style.display = "inline";
 	}
 } 
