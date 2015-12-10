@@ -122,16 +122,22 @@ oScorm.set("cmi.score.raw", score );
 oScorm.set("cmi.score.min", 0 );
 oScorm.set("cmi.score.max", 100 );
 oScorm.set("cmi.score.scaled", score / 100 );
-oScorm.set( "cmi.success_status", "passed" );
-oScorm.set( "cmi.completion_status", "completed" );
-oScorm.set( "cmi.lesson_status", "passed" );
 oScorm.save();
 
 if (score >= 83)
 	{
+	oScorm.set( "cmi.success_status", "passed" );
+	oScorm.set( "cmi.completion_status", "completed" );
+	oScorm.set( "cmi.lesson_status", "passed" );
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "cert-link" ).style.display = "inline"; 
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById("cert-link-box").style.backgroundColor = "red";
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "cert-link-box" ).style.display = "inline";
+	}
+else
+	{
+	oScorm.set( "cmi.success_status", "failed" );
+	oScorm.set( "cmi.completion_status", "completed" );
+	oScorm.set( "cmi.lesson_status", "failed" );
 	}
 } 
 
