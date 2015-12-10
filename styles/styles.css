@@ -101,6 +101,13 @@ h4
 	z-index:3;
 }
 
+#cert-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
 #certificate
 {
 	position: absolute;
@@ -108,19 +115,12 @@ h4
 	top: 40px;
 	left: 170px;
 	width: 680px;
-	height: 470px;
-	padding: 0px;
+	height: 500px;
+	padding-top: 160px;
 	font-size: 16px;
-	vertical-align:10px;
+	text-align: center;
 	overflow: auto;
-	z-index:3;
-}
-
-#cert-img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
+	z-index: 25;
 }
 
 form
