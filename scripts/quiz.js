@@ -77,7 +77,7 @@ function processQuizfinal()
 	
 	if (score >= 83)
 		{
-			totalScore = "Your score is " + score + " you passed!";
+			totalScore = "Your score is " + score + " you passed! Use link for your certificate.";
 		}
 	else
 		{
