@@ -5,7 +5,7 @@ var oScorm = pipwerks.SCORM;
 
 // This function starts the course.  This function should be called first to ensure that
 // all session variables are created
-function startCourse()
+function loadOLM()
 {
 	// check to see if cookies is enabled, otherwise, this won't work
 	if( typeof sessionStorage == "undefined" || sessionStorage.disabled )
@@ -97,7 +97,7 @@ function visitCertificate()
 	contentWindow.document.getElementById ( "user-name" ).innerHTML = learner_name;
 }
 
-function visitQuiz()
+/*function visitQuiz()
 {
 	sessionStorage.setItem( "quiz", "visited" );
 }
@@ -109,13 +109,15 @@ var score = 0;
  and to assign a whole number between 0
  and 100 to the variable score. */
 // call the function to report scores AMB
-parent.reportScores( 70 );
-}
+/*parent.reportScores( 70 );
+}*/
 
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz AMB
 function reportScores( score )
 {
+		alert( "REPORTED" );
+		
 oScorm.set("cmi.score.raw", score );
 oScorm.set("cmi.score.min", 0 );
 oScorm.set("cmi.score.max", 100 );
@@ -127,7 +129,7 @@ oScorm.save();
 } 
 
 // This function is called when the window is closed.  It saves and quits the course.
-function finishCourse()
+function finishOLM()
 {
 	oScorm.save();
 	oScorm.quit();
@@ -431,36 +433,3 @@ function checkVisits()
 	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "congrats" ).style.color = "red";
 	}
 }
-
-function gradeQuiz1()
-{
-var score = 0;
-/* some code goes here to grade the quiz
- and to assign a whole number between 0
- and 100 to the variable score. */
-// call the function to report scores
-parent.reportScores( score );
-} 
-
-function reportScores( score )
-{
-oScorm.set("cmi.score.raw", score );
-oScorm.set("cmi.score.min", 0 );
-oScorm.set("cmi.score.max", 100 );
-oScorm.set("cmi.score.scaled", score / 100 );
-oScorm.set( "cmi.success_status", "passed" );
-oScorm.set( "cmi.completion_status", "completed" );
-oScorm.set( "cmi.lesson_status", "passed" );
-oScorm.save();
-} 
-
-loadOLM();
-
-initializeSCORM(); 
-
-finishOLM(); 
-
-
-
-
-

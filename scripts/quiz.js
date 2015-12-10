@@ -75,3 +75,15 @@ function processQuizfinal()
 	
 	alert( "You got " + score + " correct!");
 }
+
+function gradeQuiz()
+{
+	var score = 93;
+	
+	/* 	some code goes here to grade the quiz
+      	and to assign a whole number between 0 
+			and 100 to the variable score. */
+
+	// call the function to report scores
+	parent.reportScores( score );
+}
