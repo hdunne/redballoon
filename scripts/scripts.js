@@ -140,14 +140,7 @@ function finishOLM()
 
 
 // This function is supposed to highlight the current page in navigation
-/*function Current(){
-	  ('a').each(function() {
-	    if ($(this).prop('href') == window.location.href) {
-	      $(this).addClass('current');
-	    }
-	  });
-	});
-*/
+
 var index = 0;
 
 function showOne()
