@@ -100,21 +100,28 @@ h4
 	overflow: auto;
 	z-index:3;
 }
+
 #certificate
 {
 	position: absolute;
 	border: 1px solid #cccccc;
-	top: 120px;
+	top: 40px;
 	left: 170px;
-	width: 640px;
+	width: 680px;
 	height: 470px;
-	padding: 10px;
+	padding: 0px;
 	font-size: 16px;
 	vertical-align:10px;
 	overflow: auto;
 	z-index:3;
 }
 
+#cert-img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
 
 form
 {
@@ -164,7 +171,7 @@ form
 {
 	position: relative;
 	color: black;
-	font-size: 14px;
+	font-size: 12px;
 	height: 250px;
 	width: 230px;
 	padding: 10px;
@@ -238,6 +245,16 @@ nav > p
 }
 
 #quiz-link
+{
+	display:none
+}
+
+#cert-link-box
+{
+	display:none
+}
+
+#cert-link
 {
 	display:none
 }

@@ -114,9 +114,9 @@ var score = 0;
 
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz AMB
-function reportScores( score )
+function reportScores( score, totalScore )
 {
-		alert( "REPORTED" );
+		alert( totalScore );
 		
 oScorm.set("cmi.score.raw", score );
 oScorm.set("cmi.score.min", 0 );
@@ -126,6 +126,12 @@ oScorm.set( "cmi.success_status", "passed" );
 oScorm.set( "cmi.completion_status", "completed" );
 oScorm.set( "cmi.lesson_status", "passed" );
 oScorm.save();
+
+if (score >= 83)
+	{
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "cert-link" ).style.display = "inline"; 
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "cert-link-box" ).style.display = "inline";
+	}
 } 
 
 // This function is called when the window is closed.  It saves and quits the course.

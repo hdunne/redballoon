@@ -25,7 +25,7 @@ function processQuiz3e()
 	alert( "You got " + score + " correct!");
 }
 
-
+var totalScore;
 
 function processQuizfinal()
 {
@@ -35,48 +35,59 @@ function processQuizfinal()
 	
 	if( q1[ 2 ].checked )
 		{
-			score = score + 1;
+			score = score + 16.666666667;
 		}
 	
 	var q2 = document.forms.quiz2.question2;
 	
 	if( q2[ 0 ].checked )
 		{
-			score = score + 1;
+			score = score + 16.666666667;
 		}
 	var q3 = document.forms.quiz2.question3;
 	
 	if( q3[ 1 ].checked )
 		{
-			score = score + 1;
+			score = score + 16.666666667;
 		}
 
 	var q4 = document.forms.quiz2.question4;
 
 	if( q4[ 2 ].checked )
 		{
-			score = score + 1;
+			score = score + 16.666666667;
 		}
 
 	var q5 = document.forms.quiz2.question5;
 	
 	if( q5[ 1 ].checked )
 		{
-			score = score + 1;
+			score = score + 16.666666667;
 		}
 
 	var q6 = document.forms.quiz2.question6;
 	
 	if( q6[ 0 ].checked )
 		{
-			score = score + 1;
+			score = score + 16.666666667;
 		}
 
+	score = Math.round(score);
+
 	
-	alert( "You got " + score + " correct!");
+	if (score >= 83)
+		{
+			totalScore = "Your score is " + score + " you passed!";
+		}
+	else
+		{
+			totalScore= "You missed 1 or more questions please try again.";
+		}
+	parent.reportScores( score, totalScore );
+	//alert( "You got " + score + " correct!");
 }
 
-function gradeQuiz()
+/*function gradeQuiz()
 {
 	var score = 93;
 	
@@ -85,5 +96,5 @@ function gradeQuiz()
 			and 100 to the variable score. */
 
 	// call the function to report scores
-	parent.reportScores( score );
-}
+/*	parent.reportScores( score );
+}*/
